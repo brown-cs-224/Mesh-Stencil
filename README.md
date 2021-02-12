@@ -47,7 +47,7 @@ To get full credit (i.e. a grade of A), you must implement the following:
 
 We will run automated test scripts that generate results from test meshes, so it is important that you **follow the standard command-line interface**. Namely, each mesh operation should be called as 
 
-'./Mesh-Stencil --input-obj-name --output-obj-name --method-name --args1 --args2 --args3 --args4'
+`./Mesh-Stencil --input-obj-name --output-obj-name --method-name --args1 --args2 --args3 --args4`
 
 Possible method names are “subdivide | simplify | remesh | denoise”, make sure that your program gracefully exits for methods which you do not implement. Please document extra options if you implement something else. Args1-args4 are respective parameters for the method. Details are documented in the stencil code. If you hardcode any of these (which will mostly likely happen for remesh and denoise), document them as well.
 
