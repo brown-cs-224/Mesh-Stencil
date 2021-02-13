@@ -6,6 +6,10 @@
 
 In this assignment, you will gain experience with low-level manipulations of triangular meshes by implementing several geometry processing functions: subdivision, simplification, and one other method of your choice. Subdivision and simplification are, in a sense, opposites: one increases the resolution of a mesh while the other decreases it. The particular subdivision algorithm you will implement is called Loop subdivision; the particular simplification algorithm is called quadric error simplification.
 
+## Setup
+
+If you're using the provided stencil code, you'll need to copy over the `Eigen` directory from your path project. Note that `Eigen` is in `.gitignore`.
+
 ## Relevant Reading
 
 - The lecture slides!

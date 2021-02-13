@@ -58,3 +58,6 @@ compile_commands.json
 
 # Executable
 mesh
+
+# Eigen (so Gradescope submission is easier)
+Eigen
