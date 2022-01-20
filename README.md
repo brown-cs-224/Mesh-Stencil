@@ -64,7 +64,7 @@ Since you need to be able to update the costs of candidate edges in the priority
 
 We will run automated test scripts that generate results from test meshes, so it is important that you **follow the standard command-line interface**. Namely, each mesh operation should be called as
 
-`./Mesh-Stencil <input-obj-name> <output-obj-name> <method-name> <arg1> <arg2> <arg3> <arg4`
+`./Mesh-Stencil <input-obj-name> <output-obj-name> <method-name> <arg1> <arg2> <arg3> <arg4>`
 
 Possible method names are `subdivide`, `simplify`, `remesh` and `denoise`, make sure that your program gracefully exits for methods which you do not implement. Please document extra options if you implement something else. `<arg1>` to `<arg4>` are extra parameters for your methods. Details are documented in the stencil code. If you hardcode any of these (which will mostly likely happen for remesh and denoise), document them as well.
 
