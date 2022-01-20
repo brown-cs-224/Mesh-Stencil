@@ -87,7 +87,7 @@ Feel free to use this stencil code to get started.
 
 This starter project is quite barebones: it provides code to load .obj files into a simple mesh representation (list of vertices and list of faces), as well as code to save that representation back to an .obj file. You’ll need to implement everything else: the mesh data structure you’ll use to support efficient local edits, etc.
 
-The starter project also contains some .obj files you can use to test your code. There are also tons of 3D model files available on the internet. A small amount of extra credit is available for finding and sharing a new (closed, manifold) .obj file with the class on Piazza **(2 points)**. To get extra credit, you’ll also need to post a before/after image pair of your code operating on this mesh (any operation is fine).
+The starter project also contains some .obj files you can use to test your code. There are also tons of 3D model files available on the internet. A small amount of extra credit is available for finding and sharing a new (closed, manifold) .obj file with the class on Slack **(2 points)**. To get extra credit, you’ll also need to post a before/after image pair of your code operating on this mesh (any operation is fine).
 
 To inspect and interact with input/output meshes, it’s worth getting familiar with some sort of 3D model viewing/editing software. One good option is [MeshLab](https://www.meshlab.net/), which is free, lightweight, and provides a ton of useful functionality, including easy conversions between many different 3D file formats. If you’re already familiar with another 3D package such as Maya or Blender, those are perfectly fine, too.
 
