@@ -74,7 +74,7 @@ For each of the geometry processing functions you implement, submit at least one
 You might want to use the ‘after’ mesh from simplification as the ‘before’ mesh for subdivision. Is the subdivided mesh the same as the original mesh before simplification?
 
 You must also submit a markdown README file **(5 points)**.
-This file should describe how to run your code to reproduce the results shown in your submitted images. **This must not require a modification to the source code itself**. Use command-line arguments (or a GUI, if you like) to change program behavior.
+This file should describe how to run your code to reproduce the results shown in your submitted images (which should be embedded in the README file). **This must not require a modification to the source code itself**. Use command-line arguments (or a GUI, if you like) to change program behavior.
 Your README should describe the data structures you used to achieve efficient asymptotic running times for your geometry processing functions. Remember to also describe your data structure validator in your README.
 
 **Important note**: You do **_not_** need to support meshes with boundaries for any part of this assignment! That is to say, you can always assume that every edge has two adjacent faces—so you don’t need to worry about any special-casing for edges on the boundary. All of the meshes provided in the starter code (see below) should satisfy this property.
