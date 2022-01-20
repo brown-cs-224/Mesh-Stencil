@@ -1,4 +1,4 @@
-# Assignment 2: Geometry Processing (mesh)
+# Assignment 2: Geometry Processing (Mesh)
 
 **Released:** 2/18/22
 
