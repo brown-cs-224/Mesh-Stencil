@@ -104,6 +104,10 @@ To inspect and interact with input/output meshes, it’s worth getting familiar 
 - Use Qt Creator's debugger.
 - **REMINDER: Your code will run much faster if you compile in Release mode ;)**
 
+## Example Results
+In folder meshes contained example meshes along with its local/global operation. Note that this only serve as a guideline and the exact vertices position might not be the same with your result as the order of local operation might differ.
+
+
 ## Submission Instructions
 
 Submit your branch of the Github classroom repository to the “Mesh” assignment.
