@@ -2,7 +2,7 @@
 
 **Released:** 2/17/23
 
-**Milestone Due:** 2/24/23 @ 11:59pm EST
+**Milestone Due:** 2/27/23 @ 11:59pm EST
 
 **Due:** 3/8/23 @ 11:59pm EST
 
