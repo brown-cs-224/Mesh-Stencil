@@ -2,6 +2,8 @@
 
 **Released:** 2/17/23
 
+**Milestone Due:** 2/24/23 @ 11:59pm EST
+
 **Due:** 3/8/23 @ 11:59pm EST
 
 In this assignment, you will gain experience with low-level manipulations of triangular meshes by implementing several geometry processing functions: subdivision, simplification, and one other method of your choice. Subdivision and simplification are, in a sense, opposites: one increases the resolution of a mesh while the other decreases it. The particular subdivision algorithm you will implement is called Loop subdivision; the particular simplification algorithm is called quadric error simplification.
@@ -37,6 +39,9 @@ For any mesh data structure you use (beyond the meshes that `tiny_obj_loader` pr
 - Efficiency: constant-time edge collapse, priority queue for managing candidate edges **(5 points)**
 
 Note that you only need to support contraction of vertex pairs connected by an edge (e.g. edge collapse), not arbitrary vertex pairs as is done in the paper.
+
+### Milestone Deadline
+By the milestone deadline, you should have implemented your mesh validator and the atomic mesh topology operations (edge flip, edge split, edge collapse). We will test your code on the `meshes/icosahedron_` test cases and will expect it to correctly reproduce all of them.
 
 #### Tips on Efficiency
 
@@ -110,7 +115,9 @@ In folder meshes contained example meshes along with its local/global operation.
 
 ## Submission Instructions
 
-Submit your branch of the Github classroom repository to the “Mesh” assignment.
+For the milestone deadline, submit your branch of the Github classroom repository to the “Mesh (Milestone)” assignment.
+
+For the final deadline, submit your branch of the Github classroom repository to the “Mesh (Final)” assignment.
 
 ## Credits
 
