@@ -41,7 +41,7 @@ For any mesh data structure you use (beyond the meshes that `tiny_obj_loader` pr
 Note that you only need to support contraction of vertex pairs connected by an edge (e.g. edge collapse), not arbitrary vertex pairs as is done in the paper.
 
 ### Milestone Deadline
-By the milestone deadline, you should have implemented your mesh validator and the atomic mesh topology operations (edge flip, edge split, edge collapse). We will test your code on the `meshes/icosahedron_` test cases and will expect it to correctly reproduce all of them.
+By the milestone deadline, you should have implemented your mesh data structure, mesh validator, and the atomic mesh topology operations (edge flip, edge split, edge collapse). We will test your code on the `meshes/icosahedron_` test cases and will expect it to correctly reproduce all of them.
 
 #### Tips on Efficiency
 
