@@ -12,29 +12,30 @@
 using namespace Eigen;
 using namespace std;
 
-void Mesh::initFromVectors(const std::vector<Vector3f> &vertices,
-           const std::vector<Vector3i> &faces)
+void Mesh::initFromVectors(const vector<Vector3f> &vertices,
+                           const vector<Vector3i> &faces)
 {
+    // Copy vertices and faces into internal vector
     _vertices = vertices;
-    _faces = faces;
+    _faces    = faces;
 }
 
-void Mesh::loadFromFile(const std::string &filePath)
+void Mesh::loadFromFile(const string &filePath)
 {
     tinyobj::attrib_t attrib;
-    std::vector<tinyobj::shape_t> shapes;
-    std::vector<tinyobj::material_t> materials;
+    vector<tinyobj::shape_t> shapes;
+    vector<tinyobj::material_t> materials;
 
     QFileInfo info(QString(filePath.c_str()));
-    std::string err;
+    string err;
     bool ret = tinyobj::LoadObj(&attrib, &shapes, &materials, &err,
                                 info.absoluteFilePath().toStdString().c_str(), (info.absolutePath().toStdString() + "/").c_str(), true);
-    if(!err.empty()) {
-        std::cerr << err << std::endl;
+    if (!err.empty()) {
+        cerr << err << endl;
     }
 
-    if(!ret) {
-        std::cerr << "Failed to load/parse .obj file" << std::endl;
+    if (!ret) {
+        cerr << "Failed to load/parse .obj file" << endl;
         return;
     }
 
@@ -47,7 +48,7 @@ void Mesh::loadFromFile(const std::string &filePath)
             for(size_t v = 0; v < fv; v++) {
                 tinyobj::index_t idx = shapes[s].mesh.indices[index_offset + v];
 
-		face[v] = idx.vertex_index;
+                face[v] = idx.vertex_index;
 
             }
             _faces.push_back(face);
@@ -55,29 +56,29 @@ void Mesh::loadFromFile(const std::string &filePath)
             index_offset += fv;
         }
     }
-    for(size_t i = 0; i < attrib.vertices.size(); i += 3) {
-	_vertices.emplace_back(attrib.vertices[i], attrib.vertices[i + 1], attrib.vertices[i + 2]);
+    for (size_t i = 0; i < attrib.vertices.size(); i += 3) {
+        _vertices.emplace_back(attrib.vertices[i], attrib.vertices[i + 1], attrib.vertices[i + 2]);
     }
-    std::cout << "Loaded " << _faces.size() << " faces and " << _vertices.size() << " vertices" << std::endl;
+    cout << "Loaded " << _faces.size() << " faces and " << _vertices.size() << " vertices" << endl;
 }
 
-void Mesh::saveToFile(const std::string &filePath)
+void Mesh::saveToFile(const string &filePath)
 {
-    std::ofstream outfile;
+    ofstream outfile;
     outfile.open(filePath);
 
     // Write vertices
     for (size_t i = 0; i < _vertices.size(); i++)
     {
         const Vector3f &v = _vertices[i];
-        outfile << "v " << v[0] << " " << v[1] << " " << v[2] << std::endl;
+        outfile << "v " << v[0] << " " << v[1] << " " << v[2] << endl;
     }
 
     // Write faces
     for (size_t i = 0; i < _faces.size(); i++)
     {
         const Vector3i &f = _faces[i];
-        outfile << "f " << (f[0]+1) << " " << (f[1]+1) << " " << (f[2]+1) << std::endl;
+        outfile << "f " << (f[0]+1) << " " << (f[1]+1) << " " << (f[2]+1) << endl;
     }
 
     outfile.close();

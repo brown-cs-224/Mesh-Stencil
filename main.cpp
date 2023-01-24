@@ -6,22 +6,20 @@
 
 #include "mesh.h"
 
-using namespace std;
-using namespace std::chrono;
 
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
     QCommandLineParser parser;
     parser.addHelpOption();
-    parser.addPositionalArgument("infile", "Input .obj file path");
+    parser.addPositionalArgument("infile",  "Input .obj file path");
     parser.addPositionalArgument("outfile", "Output .obj file path");
-    parser.addPositionalArgument("method", "subdivide/simplify/remesh/denoise");
+    parser.addPositionalArgument("method",  "subdivide/simplify/remesh/denoise");
 
     // Subdivide: number of iterations
-    // Simplify: number of faces to remove
-    // Remesh: number of iterations
-    // Denoise: number of iterations
+    // Simplify:  number of faces to remove
+    // Remesh:    number of iterations
+    // Denoise:   number of iterations
     parser.addPositionalArgument("args1", "respective argument for the method");
 
     // Remesh: Tangential smoothing weight
@@ -36,40 +34,55 @@ int main(int argc, char *argv[])
 
     parser.process(a);
 
+    // Check for invalid argument count
     const QStringList args = parser.positionalArguments();
-    if(args.size() < 3) {
-        cerr << "Arguments <input .obj file path> <output .obj file path> <method (subdivide, simplify, remesh or denoise)> <method-specific arguments...>" << endl;
+    if (args.size() < 4) {
+        std::cerr << "Arguments <input .obj file path> <output .obj file path> <method (subdivide, simplify, or denoise)> <method-specific arguments ...>" << std::endl;
         a.exit(1);
         return 1;
     }
-    QString infile = args[0];
-    QString outfile = args[1];
-    QString method = args[2];
 
+    // Parse common inputs
+    QString infile  = args[0];
+    QString outfile = args[1];
+    QString method  = args[2];
+
+    // Load
     Mesh m;
     m.loadFromFile(infile.toStdString());
 
-    auto t0 = high_resolution_clock::now();
+    // Start timing
+    auto t0 = std::chrono::high_resolution_clock::now();
 
-    // TODO: Convert the mesh into your own data structure.
-    // TODO: Implement the operations.
-    if (method == "subdivide"){
+    // Switch on method
+    if (method == "subdivide") {
+
         // TODO
-    } else if (method == "simplify"){
+
+    } else if (method == "simplify") {
+
         // TODO
-    } else if (method == "remesh"){
+
+    } else if (method == "noise") {
+
         // TODO
+
     } else if (method == "denoise") {
+
         // TODO
+
     } else {
-        cerr << "Error: Unknown method \"" << method.toUtf8().constData() << "\"" << endl;
+
+        std::cerr << "Error: Unknown method \"" << method.toUtf8().constData() << "\"" << std::endl;
+
     }
 
-    auto t1 = high_resolution_clock::now();
-    auto duration = duration_cast<milliseconds>(t1 - t0).count();
-    cout << "Execution took " << duration << " milliseconds." <<endl;
+    // Finish timing
+    auto t1 = std::chrono::high_resolution_clock::now();
+    auto duration = duration_cast<std::chrono::milliseconds>(t1 - t0).count();
+    std::cout << "Execution took " << duration << " milliseconds." << std::endl;
 
-    // TODO: Convert your data structure back to the basic format.
+    // Save
     m.saveToFile(outfile.toStdString());
 
     a.exit();
