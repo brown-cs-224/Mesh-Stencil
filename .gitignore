@@ -2,9 +2,6 @@
 # CS 2240 gitignore
 # ------------------------------------
 
-# Eigen (so Gradescope submission is easier)
-Eigen/
-
 # MacOS & clang files
 **/.DS_Store
 .qtc_clangd/
