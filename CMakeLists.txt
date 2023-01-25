@@ -27,13 +27,14 @@ add_executable(${PROJECT_NAME}
     util/tiny_obj_loader.h
 )
 
+# Specifies libraries to be linked (Qt components, glew, etc)
 target_link_libraries(${PROJECT_NAME} PRIVATE
     Qt::Core
     Qt::Gui
     Qt::Xml
 )
 
-# This allows you to `#include <Eigen/...>`
+# This allows you to `#include "Eigen/..."`
 target_include_directories(${PROJECT_NAME} PRIVATE
     Eigen
 )
