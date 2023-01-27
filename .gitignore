@@ -2,8 +2,9 @@
 # CS 2240 gitignore
 # ------------------------------------
 
-# Eigen (so Gradescope submission is easier)
+# Eigen and GLEW (so Gradescope submission is easier)
 Eigen/
+glew/
 
 # MacOS & clang files
 **/.DS_Store
