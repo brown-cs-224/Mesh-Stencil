@@ -3,6 +3,7 @@
 #include <vector>
 
 #include "Eigen/StdVector"
+#include "Eigen/Dense"
 
 EIGEN_DEFINE_STL_VECTOR_SPECIALIZATION(Eigen::Matrix2f);
 EIGEN_DEFINE_STL_VECTOR_SPECIALIZATION(Eigen::Matrix3f);
