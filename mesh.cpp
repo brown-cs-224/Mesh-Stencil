@@ -39,17 +39,16 @@ void Mesh::loadFromFile(const string &filePath)
         return;
     }
 
-    for(size_t s = 0; s < shapes.size(); s++) {
+    for (size_t s = 0; s < shapes.size(); s++) {
         size_t index_offset = 0;
-        for(size_t f = 0; f < shapes[s].mesh.num_face_vertices.size(); f++) {
+        for (size_t f = 0; f < shapes[s].mesh.num_face_vertices.size(); f++) {
             unsigned int fv = shapes[s].mesh.num_face_vertices[f];
 
             Vector3i face;
-            for(size_t v = 0; v < fv; v++) {
+            for (size_t v = 0; v < fv; v++) {
                 tinyobj::index_t idx = shapes[s].mesh.indices[index_offset + v];
 
                 face[v] = idx.vertex_index;
-
             }
             _faces.push_back(face);
 
