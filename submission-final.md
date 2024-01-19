@@ -27,21 +27,21 @@ Output for Isotropic Remeshing (Note: if you did not implement this you can just
 | `.ini` File To Produce Output | Input Mesh .png | Remeshed Mesh .png |
 | :---------------------------------------: | :--------------------------------------------------: | :-------------------------------------------------: | 
 | <Path to your .ini file> |  ![Place screenshot of your input mesh here]() | ![Place screenshot of your remeshed mesh here]() |
-| <Path to your .ini file> |  ![Place screenshot of your input mesh here]() | ![Place screenshot of your remeshed mesh here]() |
+
 
 
 Output for Bilateral Mesh Denoising (Note: if you did not implement this you can just skip this part)
 | `.ini` File To Produce Output | Noisy Mesh .png | Denoised Mesh .png |
 | :---------------------------------------: | :--------------------------------------------------: | :-------------------------------------------------: | 
 | <Path to your .ini file> |  ![Place screenshot of a noisy mesh here]() | ![Place screenshot of your denoised mesh here]() |
-| <Path to your .ini file> |  ![Place screenshot of a noisy mesh here]() | ![Place screenshot of your denoised mesh here]() |
+
 
 
 Output for any other Geometry Processing Functions (Note: if you did not implement this you can just skip this part)
 | `.ini` File To Produce Output | Input | Output |
 | :---------------------------------------: | :--------------------------------------------------: | :-------------------------------------------------: | 
 | <Path to your .ini file> |  ![Place screenshot input mesh here]() | ![Place screenshot of output mesh here]() |
-| <Path to your .ini file> |  ![Place screenshot input mesh here]() | ![Place screenshot of output mesh here]() |
+
 
 ### Mesh Data Structure 
 Describe your mesh data structure here. 
