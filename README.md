@@ -66,7 +66,7 @@ Since you need to be able to update the costs of candidate edges in the priority
 
 Choose one (or more) of the following:
 
-1. **Isotropic Remeshing**: make a mesh more regular by iteratively applying a set of local mesh operations. See Section 4 of [this paper](https://www.cs.tau.ac.il/~dcor/articles/2003/Bilateral-Mesh-Denoising.pdf), as well as the lecture slides. More precisely, you should:
+1. **Isotropic Remeshing**: make a mesh more regular by iteratively applying a set of local mesh operations. See Section 4 of [this paper] (https://www.graphics.rwth-aachen.de/media/papers/remeshing1.pdf), as well as the lecture slides. More precisely, you should:
    - Compute the mean edge length $L$ of the input.
    - Split all edges that are longer than $\frac{4L}{3}$.
    - Collapse all edges that are shorter than $\frac{4L}{5}$.
@@ -74,7 +74,7 @@ Choose one (or more) of the following:
    - Compute the centroids for all the vertices.
    - Move each vertex in the tangent direction toward its centroid.
    - Include at least 2 pairs of screenshots showing how your code moves vertices positions. 
-2. **Bilateral Mesh Denoising**: smooth noisy meshes while preserving important features. See Section 2 of [this paper](https://www.graphics.rwth-aachen.de/media/papers/remeshing1.pdf), as well as the lecture slides.
+2. **Bilateral Mesh Denoising**: smooth noisy meshes while preserving important features. See Section 2 of [this paper](https://www.cs.tau.ac.il/~dcor/articles/2003/Bilateral-Mesh-Denoising.pdf), as well as the lecture slides.
    - This method makes use of mesh vertex normals. As described in the paper, a common way to compute a vertex normal is to take the average of the normals of all faces adjacent to a vertex. The mesh data structure you've already built for the first two parts of this assignment should make this easy.
    - To test this method, you'll need to have some noisy input meshes. The easiest way to do this is to add synthetic noise to a clean mesh you already have. A simple technique is to add a random displacement to every vertex along its normal direction.
    - You don't need to deal with volume preservation, though you can if you want. Sections 3.1-3.2 of [this paper](http://multires.caltech.edu/pubs/ImplicitFairing.pdf) describe a simple volume preservation technique.
