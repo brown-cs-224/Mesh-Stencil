@@ -47,7 +47,7 @@ Output for any other Geometry Processing Functions (Note: if you did not impleme
 Describe your mesh data structure here. 
 
 ### Mesh Validator
-Describe what your mesh validator checks for here.
+Describe what your mesh validator checks for here. This can be a list.
 
 ### Run Time/Efficency 
 Describe how you achieved efficient asymptotic running times for your geometry processing functions, including the data structures you used.
