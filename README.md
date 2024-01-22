@@ -1,10 +1,10 @@
 # Assignment 2: Geometry Processing (Mesh)
 
-**Released:** 2/17/23
+**Released:** 2/16/24
 
-**Milestone Due:** 2/27/23 @ 11:59pm EST
+**Milestone Due:** 2/26/24 @ 11:59pm EST
 
-**Final Assignment Due:** 3/8/23 @ 11:59pm EST
+**Final Assignment Due:** 3/6/24 @ 11:59pm EST
 
 In this assignment, you will gain experience with low-level manipulations of triangular meshes by implementing several geometry processing functions: subdivision, simplification, and one other method of your choice.
 
