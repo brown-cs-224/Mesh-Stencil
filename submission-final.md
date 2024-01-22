@@ -46,13 +46,15 @@ Output for any other Geometry Processing Functions (Note: if you did not impleme
 | <Path to your .ini file> |  ![Place screenshot input mesh here]() | ![Place screenshot of output mesh here]() |
 
 
-### Mesh Data Structure 
+### Design Choices
+
+#### Mesh Data Structure 
 Describe your mesh data structure here. 
 
-### Mesh Validator
+#### Mesh Validator
 Describe what your mesh validator checks for here. This can be a list.
 
-### Run Time/Efficency 
+#### Run Time/Efficency 
 Describe how you achieved efficient asymptotic running times for your geometry processing functions, including the data structures you used.
 
 ### Collaboration/References
