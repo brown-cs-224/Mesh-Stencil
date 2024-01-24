@@ -40,7 +40,7 @@ For the mesh data structure that you choose to implement (not counting the basic
 
 You should implement `validate()` **before** implementing any mesh operations, so that you can run it to detect whether your mesh operations are mangling your data structures. Make your `validate()` function as thorough and comprehensive as possible&mdash;doing so will save you a _lot_ of time debugging.
 
-For full credit, your validator must contain at least 10 unique assertions.
+For full credit, your validator must contain at least 10 unique assertions. Make sure to fill out [submission-milestone.md](submission-milestone.md).
 
 ### Loop Subdivision
 
@@ -99,16 +99,22 @@ We strongly recommend that you also implement your **atomic mesh operations** (e
 
 ### Final Grading
 
-By your final submission, we expect your code to **follow the standard command-line interface**. Namely, each mesh operation should be called as:
+By your final submission, we expect your code to read in a `.ini` config file which should specify the input and output paths for the meshes and paramaters/arguments you are using for each method. See [./template_inis/final/simplify_cow.ini](./template_inis/final/simplify_cow.ini) for example. Feel free to create your own `.ini` files with additional parameters as necessary, **but do not modify the provided .ini files**!
 
-`./mesh <input-obj> <output-obj> <method> <arg1?> <arg2?> <arg3?> <arg4?>`
-
-- Possible methods are `subdivide`, `simplify`, `remesh` and `denoise`.
+- Possible methods:
+  - `subdivide`, `simplify`, `remesh` and `denoise`.
   - Your program should gracefully exit for unimplemented methods. Please document extra options if you implement something else.
-  - Running your program should not require any modifications to your source code: instead, use command-line arguments (see: [Final Grading](#final-grading))._
-- `<arg1>` to `<arg4>` are extra parameters for your methods.
-  - Details are documented in the stencil code's main function.
+- Running your program should not require any modifications to your source code; your program should respond to the parameters in your `.ini` config file. A `.ini` config file should be your only command-line argument.
+- Parameter details for each method are documented in the stencil code's main function.
   - For example, we expect `simplify`'s first argument to be the number of faces to remove.
+
+#### How to Run
+To set the `.ini` config file as a command line argument in Qt, go to the Projects tab on the left, under Run, under your currently configured kit, click run, and you should have a screen where you can enter command line arguments to run the executable with.
+
+The program will save the processed/modified mesh to the path specified 'outfile' in the config file.
+
+Note: You will need to take screenshots of your output meshes for your final submission. See [submission_final.md](submission_final.md) for more details.
+
 
 ## Resources
 
