@@ -32,6 +32,8 @@ Your program must implement the following features:
 
 This sums to **100 points**.
 
+During grading, you will be required to run the [Python timer script](https://github.com/brown-cs-224/mesh-timer) on the functions you implemented. The script will visualize your functions' time complexity. Do not modify this script!
+
 ### Mesh Data Structure and Validator
 
 > _This must be completed by the milestone deadline (see [Milestone Grading](#milestone-grading))._
