@@ -52,7 +52,8 @@ For full credit, your validator must contain at least 10 unique assertions. Make
 
 > Note: you only need to support contraction of vertex pairs connected by an edge, not arbitrary vertex pairs as is done in the paper.
 
-- Correct edge collapse mesh connectivity **(10 points)**
+- Correct edge collapse mesh connectivity **(7.5 points)**
+- Rechecks validity of non-collapsible edges in case they become valid later on **(2.5 points)**
 - Correct computation of optimal collapsed vertex position **(7.5 points)**
 - Full algorithm for simplification by iterative edge collapse **(7.5 points)**
 - Efficiency: constant-time edge collapse, priority queue for managing candidate edges **(5 points)**
