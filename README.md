@@ -46,8 +46,9 @@ For full credit, your validator must contain at least 10 unique assertions. Make
 
 ### Loop Subdivision
 
-- Correct subdivided triangle connectivity **(7.5 points)**
-- Correct subdivided vertex positions **(7.5 points)**
+- Correct subdivided triangle connectivity **(5 points)**
+- Correct subdivided vertex positions **(5 points)**
+- Correct visual output **(5 points)**
 - Runs in linear time in size of mesh **(5 points)**
 
 ### Quadric Error Simplification
@@ -55,8 +56,9 @@ For full credit, your validator must contain at least 10 unique assertions. Make
 > Note: you only need to support contraction of vertex pairs connected by an edge, not arbitrary vertex pairs as is done in the paper.
 
 - Correct edge collapse mesh connectivity **(10 points)**
-- Correct computation of optimal collapsed vertex position **(7.5 points)**
-- Full algorithm for simplification by iterative edge collapse **(7.5 points)**
+- Correct computation of optimal collapsed vertex position **(5 points)**
+- Full algorithm for simplification by iterative edge collapse **(5 points)**
+- Correct visual output **(5 points)**
 - Efficiency: constant-time edge collapse, priority queue for managing candidate edges **(5 points)**
 
 <details>
