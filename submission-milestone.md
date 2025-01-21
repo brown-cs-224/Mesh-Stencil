@@ -8,10 +8,10 @@ Describe what your mesh validator checks for here. This can be a list of asserti
 
 ### Implementation Locations
 
-Please list the lines where the implementations of these features start:
+Please link to the lines (in GitHub) where the implementations of these features start:
 
-- Mesh data structure
-- Mesh validator
+- [Mesh data structure]()
+- [Mesh validator]()
 
 ### Collaboration/References
 

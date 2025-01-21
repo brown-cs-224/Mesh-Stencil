@@ -45,9 +45,9 @@ Output for any other Geometry Processing Functions (Note: if you did not impleme
 
 Please list the lines where the implementations of these features start:
 
-- Mesh data structure & validator
-- Loop Subdivision
-- Quadric Error Simplification
+- [Mesh data structure & validator]()
+- [Loop Subdivision]()
+- [Quadric Error Simplification]()
 - Another Geometry Processing Function
 - Any extra credit function
 
