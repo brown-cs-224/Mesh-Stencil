@@ -1,11 +1,5 @@
 # Assignment 2: Geometry Processing (Mesh)
 
-**Released:** 2/16/24
-
-**Milestone Due:** 2/26/24 @ 11:59pm EST
-
-**Final Assignment Due:** 3/6/24 @ 11:59pm EST
-
 In this assignment, you will gain experience with low-level manipulations of triangular meshes by implementing several geometry processing functions: subdivision, simplification, and one other method of your choice.
 
 Subdivision and simplification are, in a sense, opposites: one increases the resolution of a mesh while the other decreases it. The specific subdivision algorithm you will implement is called **Loop subdivision**; and the specific simplification algorithm is called **quadric error simplification**.
