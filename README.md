@@ -22,9 +22,11 @@ Your program must implement the following features:
 - [Quadric error simplification](#quadric-error-simplification) **(30 points)**
 - [Another geometry processing function](#another-geometry-processing-function) **(25 points for correctness; 5 points for efficiency)**
 - [Submission template: output images](submission-final.md) **(5 points)**
-- [Submission template: *Design Choices, Collaboration, and Known Bugs*](submission-final.md) **(5 points)**
+- [Submission template: _Implementation Locations, Design Choices, Collaboration, and Known Bugs_](submission-final.md) **(5 points)**
 
 This sums to **100 points**.
+
+During grading, you will be required to run the [Python timer script](https://github.com/brown-cs-224/mesh-timer) on the functions you implemented. The script will visualize your functions' time complexity. Do not modify this script!
 
 ### Mesh Data Structure and Validator
 
@@ -38,18 +40,19 @@ For full credit, your validator must contain at least 10 unique assertions. Make
 
 ### Loop Subdivision
 
-- Correct subdivided triangle connectivity **(7.5 points)**
-- Correct subdivided vertex positions **(7.5 points)**
+- Correct subdivided triangle connectivity **(5 points)**
+- Correct subdivided vertex positions **(5 points)**
+- Correct visual output **(5 points)**
 - Runs in linear time in size of mesh **(5 points)**
 
 ### Quadric Error Simplification
 
 > Note: you only need to support contraction of vertex pairs connected by an edge, not arbitrary vertex pairs as is done in the paper.
 
-- Correct edge collapse mesh connectivity **(7.5 points)**
-- Rechecks validity of non-collapsible edges in case they become valid later on **(2.5 points)**
-- Correct computation of optimal collapsed vertex position **(7.5 points)**
-- Full algorithm for simplification by iterative edge collapse **(7.5 points)**
+- Correct edge collapse mesh connectivity **(10 points)**
+- Correct computation of optimal collapsed vertex position **(5 points)**
+- Full algorithm for simplification by iterative edge collapse **(5 points)**
+- Correct visual output **(5 points)**
 - Efficiency: constant-time edge collapse, priority queue for managing candidate edges **(5 points)**
 
 <details>
@@ -70,7 +73,7 @@ Choose one (or more) of the following:
    - Flip all edges that decrease the total deviation from degree 6.
    - Compute the centroids for all the vertices.
    - Move each vertex in the tangent direction toward its centroid.
-   - Include at least 2 pairs of screenshots showing how your code moves vertices positions. 
+   - Include at least 2 pairs of screenshots showing how your code moves vertices positions.
 2. **Bilateral Mesh Denoising**: smooth noisy meshes while preserving important features. See Section 2 of [this paper](https://www.cs.tau.ac.il/~dcor/articles/2003/Bilateral-Mesh-Denoising.pdf), as well as the lecture slides.
    - This method makes use of mesh vertex normals. As described in the paper, a common way to compute a vertex normal is to take the average of the normals of all faces adjacent to a vertex. The mesh data structure you've already built for the first two parts of this assignment should make this easy.
    - To test this method, you'll need to have some noisy input meshes. The easiest way to do this is to add synthetic noise to a clean mesh you already have. A simple technique is to add a random displacement to every vertex along its normal direction.
@@ -79,7 +82,7 @@ Choose one (or more) of the following:
 3. A learnable method for **denoising** or **subdivision**
    - There are a number of papers that use neural nets to perform these operations (see this paper on [denoising](https://arxiv.org/pdf/1903.04015.pdf) and this paper on [subdivision](https://arxiv.org/pdf/2005.01819.pdf)).
    - Feel free to find other references/papers that implement neural methods of geometry processing
-   - Please briefly explain your the method you used, including your dataset, network architecture, loss functions, etc. 
+   - Please briefly explain your the method you used, including your dataset, network architecture, loss functions, etc.
 4. Something else! Ask the instructor if you're uncertain whether what you have in mind is too complex/not complex enough.
 
 ## Grading
@@ -94,7 +97,7 @@ We strongly recommend that you also implement your **atomic mesh operations** (e
 
 ### Final Grading
 
-By your final submission, we expect your code to read in a `.ini` config file which should specify the input and output paths for the meshes and paramaters/arguments you are using for each method. See [./template_inis/final/simplify_cow.ini](./template_inis/final/simplify_cow.ini) for example. Feel free to create your own `.ini` files with additional parameters as necessary, **but do not modify the provided .ini files**!
+By your final submission, we expect your code to read in a `.ini` config file which should specify the input and output paths for the meshes and paramaters/arguments you are using for each method. See [./template_inis/final/simplify_cow.ini](./template_inis/final/simplify_cow.ini) for example. Feel free to create your own `.ini` files with additional parameters as necessary, **but do not modify the provided .ini files**! Do **NOT** hardcode parameters present in these `.ini` files into your code. Failure to follow this instruction will result in point deductions.
 
 - Possible methods:
   - `subdivide`, `simplify`, `remesh` and `denoise`.
@@ -104,12 +107,12 @@ By your final submission, we expect your code to read in a `.ini` config file wh
   - For example, we expect `simplify`'s first argument to be the number of faces to remove.
 
 #### How to Run
+
 To set the `.ini` config file as a command line argument in Qt, go to the Projects tab on the left, under Run, under your currently configured kit, click run, and you should have a screen where you can enter command line arguments to run the executable with.
 
 The program will save the processed/modified mesh to the path specified 'outfile' in the config file.
 
 Note: You will need to take screenshots of your output meshes for your final submission. See [submission_final.md](submission_final.md) for more details.
-
 
 ## Resources
 
@@ -129,6 +132,7 @@ All the meshes provided in the stencil satisfy this property. If you choose to u
 To inspect your input/output meshes, it's worth getting familiar with some sort of 3D modelling software. We suggest using [MeshLab](https://www.meshlab.net/), which is free, lightweight, and provides a ton of useful functionality, including easy conversions between many different 3D file formats. If you're already familiar with another 3D package such as Maya or Blender, those are perfectly fine, too.
 
 ## Submission Instructions
+
 You must complete [submission_milestone.md](submission_milestone.md) and [submission_final.md](submission_final.md) by the milestone and final deadlines, respectively. See the instructions in each file.
 
 For the milestone deadline, submit your GitHub repository to the "Mesh (Milestone)" assignment.
