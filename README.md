@@ -91,7 +91,7 @@ Choose one (or more) of the following:
 
 By the milestone deadline, you should have implemented your **mesh data structure** and **mesh validator** as well as filled out [submission-milestone.md](submission-milestone.md). Having these completed by the milestone deadline is the only way to avoid a 5 point deduction, same as with Path's milestone.
 
-We strongly recommend that you also implement your **atomic mesh operations** (edge flip, edge split, edge collapse) by the milestone deadline&mdash;_however, we will not grade for these_. Instead, you may use the `meshes/icosahedron*.obj` files to test your implementation. Your code should be able to produce meshes which look like the following:
+To stay on track, we strongly recommend that you also implement your **atomic mesh operations** (edge flip, edge split, edge collapse) *and* be at least partially done with loop subdivision by the milestone deadline&mdash;_however, we will not grade for these_. Instead, you may use the `meshes/icosahedron*.obj` files to test your implementation. Your code should be able to produce meshes which look like the following:
 
 ![icosahedron mesh operations](./meshes/icosahedron_meshOps.gif)
 
