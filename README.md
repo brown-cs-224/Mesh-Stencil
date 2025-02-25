@@ -8,8 +8,8 @@ Subdivision and simplification are, in a sense, opposites: one increases the res
 
 - The lecture slides!
 - [Surface Simplification Using Quadric Error Metrics](http://www.cs.cmu.edu/~./garland/quadrics/quadrics.html)
-- [A Remeshing Approach to Multiresolution Modeling](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.86.7407&rep=rep1&type=pdf)
-- [Bilateral Mesh Denoising](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.14.1033&rep=rep1&type=pdf)
+- [A Remeshing Approach to Multiresolution Modeling](http://mesh.brown.edu/DGP/pdfs/Botsch-sm2004.pdf)
+- [Bilateral Mesh Denoising](https://www.cs.tau.ac.il/~dcor/articles/2003/Bilateral-Mesh-Denoising.pdf)
 
 ## Requirements
 
