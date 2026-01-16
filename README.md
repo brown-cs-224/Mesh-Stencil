@@ -85,15 +85,19 @@ Choose one (or more) of the following:
    - Please briefly explain your the method you used, including your dataset, network architecture, loss functions, etc.
 4. Something else! Ask the instructor if you're uncertain whether what you have in mind is too complex/not complex enough.
 
+Note that if you implement more than one of the above functions, you will receive up to 30 points for the first function and reduced extra credit for subsequent functions. 
+
 ## Grading
 
 ### Milestone Grading
 
-By the milestone deadline, you should have implemented your **mesh data structure** and **mesh validator** as well as filled out [submission-milestone.md](submission-milestone.md). Having these completed by the milestone deadline is the only way to avoid a 5 point deduction, same as with Path's milestone.
+By the milestone deadline, you should have implemented your **mesh data structure**, **mesh validator**, and **atomic mesh operations** (edge flip, edge split, edge collapse) as well as filled out [submission-milestone.md](submission-milestone.md). Having these completed by the milestone deadline is the only way to avoid a 5 point deduction, same as with Path's milestone.
 
-To stay on track, we strongly recommend that you also implement your **atomic mesh operations** (edge flip, edge split, edge collapse) *and* be at least partially done with loop subdivision by the milestone deadline&mdash;_however, we will not grade for these_. Instead, you may use the `meshes/icosahedron*.obj` files to test your implementation. Your code should be able to produce meshes which look like the following:
+You may use the `meshes/icosahedron*.obj` files to test your implementation of atomic edge operations. Your code should be able to produce meshes which look like the following:
 
 ![icosahedron mesh operations](./meshes/icosahedron_meshOps.gif)
+
+To stay on track, we strongly recommend that you also be at least partially done with loop subdivision by the milestone deadline&mdash;_however, we will not grade for this_.  
 
 ### Final Grading
 
