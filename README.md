@@ -19,8 +19,8 @@ Your program must implement the following features:
 
 - [Mesh data structure and validator](#mesh-data-structure-and-validator) **(10 points - milestone deadline)**
 - [Loop subdivision](#loop-subdivision) **(20 points)**
-- [Quadric error simplification](#quadric-error-simplification) **(30 points)**
-- [Another geometry processing function](#another-geometry-processing-function) **(25 points for correctness; 5 points for efficiency)**
+- [Quadric error simplification](#quadric-error-simplification) **(40 points)**
+- [Another geometry processing function](#another-geometry-processing-function) **(15 points for correctness; 5 points for efficiency)**
 - [Submission template: output images](submission-final.md) **(5 points)**
 - [Submission template: _Implementation Locations, Design Choices, Collaboration, and Known Bugs_](submission-final.md) **(5 points)**
 
