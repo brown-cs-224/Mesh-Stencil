@@ -85,7 +85,7 @@ Choose one (or more) of the following:
    - Please briefly explain your the method you used, including your dataset, network architecture, loss functions, etc.
 4. Something else! Ask the instructor if you're uncertain whether what you have in mind is too complex/not complex enough.
 
-Note that if you implement more than one of the above functions, you will receive up to 30 points for the first function and reduced extra credit for subsequent functions. 
+Note that if you implement more than one of the above functions, you will receive up to 20 points for the first function and reduced extra credit for subsequent functions. 
 
 ## Grading
 

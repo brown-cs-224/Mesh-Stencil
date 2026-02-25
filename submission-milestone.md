@@ -12,6 +12,7 @@ Please link to the lines (in GitHub) where the implementations of these features
 
 - [Mesh data structure]()
 - [Mesh validator]()
+- [Atomic mesh operations]()
 
 ### Collaboration/References
 
